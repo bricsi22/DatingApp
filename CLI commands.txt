@@ -1,0 +1,30 @@
+dotnet --info
+
+dotnet net sln
+
+dotnet new webapi -o API
+
+dotnet run
+
+dotnet dev-certs https --trust
+
+dotnet watch run
+
+dotnet tool install --global dotnet-ef --version 5.0.2
+
+dotnet ef migrations add InitialCreate -o Data/Migrations
+
+dotnet ef database update
+
+dotnet new -h
+
+dotnet new gitignore
+
+git remote add origin https://github.com/bricsi22/DatingApp.git
+
+git push -u origin master
+
+ng new client
+
+ng serve
+
