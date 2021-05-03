@@ -28,3 +28,6 @@ ng new client
 
 ng serve
 
+dotnet ef migrations add UserPasswordAdded
+
+dotnet ef database update
