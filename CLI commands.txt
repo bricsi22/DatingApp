@@ -31,3 +31,7 @@ ng serve
 dotnet ef migrations add UserPasswordAdded
 
 dotnet ef database update
+
+dotnet ef database drop
+
+ng g s account --skip-tests
