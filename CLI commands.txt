@@ -14,7 +14,10 @@ dotnet tool install --global dotnet-ef --version 5.0.2
 
 dotnet ef migrations add InitialCreate -o Data/Migrations
 
+dotnet ef migrations remove
+
 dotnet ef database update
+dotnet ef database drop
 
 dotnet new -h
 
