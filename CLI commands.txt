@@ -42,3 +42,5 @@ ng g s account --skip-tests
 ng g guard auth --skip-tests
 
 ng g m shared --flat
+
+ng g guard prevent-unsaved-changed --skip-tests
