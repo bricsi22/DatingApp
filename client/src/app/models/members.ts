@@ -14,6 +14,7 @@ export interface Member {
   country: string;
   photos: Photo[];
   photoUrl: string;
+  age: number;
 }
 
 
