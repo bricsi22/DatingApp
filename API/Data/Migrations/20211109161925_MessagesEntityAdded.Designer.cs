@@ -3,14 +3,16 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20211109161925_MessagesEntityAdded")]
+    partial class MessagesEntityAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,10 +86,7 @@ namespace API.Data.Migrations
                     b.Property<bool>("RecepientDeleted")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("RecepientId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("RecipientId")
+                    b.Property<int>("RecepientId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("RecipientUsername")
@@ -156,7 +155,8 @@ namespace API.Data.Migrations
                     b.HasOne("API.Entities.AppUser", "Recepient")
                         .WithMany("MessagesReceived")
                         .HasForeignKey("RecepientId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("API.Entities.AppUser", "Sender")
                         .WithMany("MessagesSent")
