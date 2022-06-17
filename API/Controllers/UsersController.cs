@@ -112,12 +112,12 @@ namespace API.Controllers
 
             var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
 
-            if (photo.IsMain) 
+            if ((photo.IsMain ?? false) == true) 
             {
                 return BadRequest("This is already you main photo");
             }
 
-            var currentMain = user.Photos.FirstOrDefault(x => x.IsMain);
+            var currentMain = user.Photos.FirstOrDefault(x => (x.IsMain ?? false));
             if (currentMain != null) {
                 currentMain.IsMain = false;
             }
@@ -136,7 +136,7 @@ namespace API.Controllers
             var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
             if (photo == null) return NotFound();
 
-            if (photo.IsMain) return BadRequest("You cannot delete your main photo");
+            if ((photo.IsMain ?? false)) return BadRequest("You cannot delete your main photo");
 
             if (photo.PublicId != null) {
                 var result = await _photoService.DeletePhotoAsync(photo.PublicId);

@@ -13,8 +13,7 @@
     "Country": "French Polynesia",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/89.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/women/89.jpg"
       }
     ]
   },
@@ -32,8 +31,7 @@
     "Country": "Jordan",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/30.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/women/30.jpg"
       }
     ]
   },
@@ -51,8 +49,7 @@
     "Country": "Syria",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/74.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/women/74.jpg"
       }
     ]
   },
@@ -70,8 +67,7 @@
     "Country": "Mexico",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/25.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/women/25.jpg"
       }
     ]
   },
@@ -89,8 +85,7 @@
     "Country": "Taiwan",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/19.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/women/19.jpg"
       }
     ]
   },
@@ -108,8 +103,7 @@
     "Country": "United Kingdom",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men/67.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/men/67.jpg"
       }
     ]
   },
@@ -127,8 +121,7 @@
     "Country": "Nicaragua",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men/44.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/men/44.jpg"
       }
     ]
   },
@@ -146,8 +139,7 @@
     "Country": "Armenia",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men/66.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/men/66.jpg"
       }
     ]
   },
@@ -165,8 +157,7 @@
     "Country": "Hong Kong",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men/83.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/men/83.jpg"
       }
     ]
   },
@@ -184,8 +175,7 @@
     "Country": "Mali",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men/44.jpg",
-        "IsMain": true
+        "Url": "https://randomuser.me/api/portraits/men/44.jpg"
       }
     ]
   }

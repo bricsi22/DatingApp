@@ -41,7 +41,7 @@ namespace API.Data
                 Username = user.UserName,
                 KnownAs = user.KnownAs, 
                 Age = user.DateOfBirth.CalculateAge(),
-                PhotoUrl = user.Photos.FirstOrDefault(p => p.IsMain).Url,
+                PhotoUrl = user.Photos.FirstOrDefault(p => (p.IsMain ?? false)).Url,
                 City = user.City,
                 Id = user.Id
             });
