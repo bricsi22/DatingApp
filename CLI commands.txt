@@ -64,3 +64,11 @@ git checkout -b FixMessages
 git push heroku master
 
 git checkout -b FixMessages
+
+git add .
+
+git commit -m "Applied Fix"
+
+git branch -a
+
+git push origin FixMessages
