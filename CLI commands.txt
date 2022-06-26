@@ -49,3 +49,18 @@ docker run --name dev -e POSTGRES_USER=appuser -e POSTGRES_PASSWORD=Pa$$w0rd -p 
 
 dotnet ef database drop
 
+
+
+heroku login
+
+heroku git:remote -a datingapp-tutorial
+
+heroku config:set ASPNETCORE_ENVIRONMENT=Production
+
+heroku config:set TokenKey=EcYHfnfKtYnTj5MLGgJEwQLmVHnYtcEy
+
+git checkout -b FixMessages
+
+git push heroku master
+
+git checkout -b FixMessages
