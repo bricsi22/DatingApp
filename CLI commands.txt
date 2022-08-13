@@ -45,10 +45,9 @@ ng g m shared --flat
 
 ng g guard prevent-unsaved-changed --skip-tests
 
-docker run --name dev -e POSTGRES_USER=appuser -e POSTGRES_PASSWORD=Pa$$w0rd -p 5432:5432 -d postgres:latest
+docker run --name pennyapp -e POSTGRES_USER=pennydatabase -e POSTGRES_PASSWORD=Stargate -p 5432:5432 -d postgres:latest
 
 dotnet ef database drop
-
 
 
 heroku login
